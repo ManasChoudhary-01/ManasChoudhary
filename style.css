@@ -1,0 +1,939 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #202124;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* HEADER CSS STARTS */
+
+/* NAVBAR CSS STARTS */
+
+.navbar {
+    padding-top: 5vh;
+    padding-left: 80px;
+    padding-bottom: 7vh;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    font-size: 34px;
+    color: #fff;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.logo:hover {
+    color: #f67246;
+    cursor: pointer;
+    scale: 1.2;
+}
+
+.nav-items ul {
+    right: 9vw;
+    list-style: none;
+    display: flex;
+    gap: 6vw;
+    padding-right: 9vw;
+}
+
+.nav-items ul li a {
+    position: relative;
+    font-size: 1.8vw;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.nav-items ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    height: 3.1px;
+    width: 0%;
+    border-radius: 2px;
+    bottom: -14px;
+    transition: 0.3s ease-in-out;
+}
+.nav-items ul li a:hover:after {
+    width: 80%;
+}
+
+#home a {
+    position: relative;
+}
+#home a:after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    height: 3.1px;
+    width: 80%;
+    border-radius: 2px;
+    bottom: -14px;
+}
+.bar-menu{
+    display: none;
+}
+
+/* NAVBAR CSS ENDS */
+
+/* HEADER CSS ENDS */
+
+/* MAIN CSS STARTS */
+
+/* CONTAINER-1 CSS STARTS */
+
+.container-1{
+    margin-left: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+/* SIDEBAR CSS */
+
+.line1 {
+    margin-left: 15px;
+    height: 20vw;
+    background-color: #fff;
+    width: 1.5px
+    
+}
+.sidebar-items ul{
+    
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.sidebar-items ul li img {
+    height: 30px;
+    
+}
+.sidebar-items ul li img:hover {
+    scale: 1.15;
+    cursor: pointer;
+    transition: 0.3ms ease-in-out;
+}
+
+.line2 {
+    height: 20vw;
+    background-color: #fff;
+    width: 1.5px;
+    margin-left: 15px;
+    
+}
+
+/* CONTENT-1 CSS */
+
+.content-1 {
+    margin-top: 18vw;
+    margin-left: 3vw;
+}
+.med1 {
+    color: white;
+    font-size: 2vw;
+}
+.med2 {
+    color: #FFA588;
+    font-size: 4vw;
+    font-weight: bold;
+}
+.med3 {
+    font-size: 1.5vw;
+    color: #BCBCBA;
+}
+
+/* BUTTONS CSS */
+.buttons {
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+#btn1 {
+    height: 4vw;
+    width: 14vw;
+    border-radius: 0.5vw;
+    border: none;
+    color: #000;
+    font-size: 1.5vw;
+    background-color: #FFA588;
+    font-weight: 600;
+}
+
+#btn1:hover {
+    background-color: #f67246;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+#btn2 {
+    height: 4vw;
+    width: 14vw;
+    border-radius: 0.5vw;
+    border: 0.15vw solid #FFA588;
+    color: #FFA588;
+    font-size: 1.5vw;
+    background-color: #202124;
+    font-weight: 600;
+}
+
+#btn2:hover {
+    border: 0.15vw solid #202124;
+    color:  #202124;
+    background-color: #f7cabb;
+    cursor: pointer;
+    transition: 0.1s ease;
+
+}
+
+/* HERO-IMG CSS */
+
+.heroimg img {
+    height: 50vw;
+}
+
+/* CONTAINER-1 CSS ENDS */
+
+/* CONTAINER-2 CSS STARTS */
+
+.container-2 {
+    margin-right: 64px;
+    margin-left: 54px;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    gap: 8vw;
+}
+.med4 img {
+    height: 35vw;
+}
+
+.content-2 h4 {
+    margin-top: 6vh;
+    color: #FFA588;
+    font-size: 2vw;
+}
+.content-2 p {
+    color: #fff;
+    padding-top: 3vw;
+    font-size: 1.5vw;
+}
+.med5 ul{
+    padding-top: 3vw;
+    display: flex;
+    list-style: none;
+    gap: 4vw;
+}
+.med5 ul li img{
+    color: #FFA588;
+    height: 2.5vw;
+    
+}
+.med5 ul li img:hover{
+    scale: 1.15;
+    transition: 0.3ms ease-in-out;
+    cursor: pointer;
+}
+
+/* CONTAINER-2 CSS ENDS */
+
+/* CONTAINER-3 CSS STARTS */
+
+.container-3 {
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-3 h3{
+    color: #FFA588;
+    font-size: 2.2vw;
+    
+}
+.med6 {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    height: 4px;
+    width: 15vw;
+    background-color: #FFA588;
+}
+
+.content-3 {
+    margin-top: 12vh;
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    
+}
+
+/* BOX CSS */
+
+.box {
+    padding-top: 6vh;
+    height: 23vw;
+    width: 25vw;
+    border: 2px solid #FFA588;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.2vw;
+
+}
+.box img {
+    height: 5.5vw;
+}
+.box h4{
+    color: #FFA588;
+    font-size: 2vw;
+}
+.box p{
+    color: #fff;
+    font-size: 1.5vw;
+    width: 19vw;
+}
+.box:hover {
+    scale: 1.15;
+    background-color:#ffe4e1;
+    transition: 0.5s ease-in-out;
+}
+.box:hover p{
+    color: #000;
+}
+
+/* CONTAINER-3 CSS ENDS */
+
+/* CONTAINER-4 CSS STARTS */
+
+.container-4 {
+    margin-top: 18vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-4 h3{
+    color: #FFA588;
+    font-size: 2.2vw;
+    
+}
+.med7 {
+    color: white;
+    margin-top: 8vh;
+    display: flex;
+    margin-left: -3.8vw;
+    gap: 14vw;
+    
+}
+
+.med7 h6 {
+    position: relative;
+    height: 3.5vw;
+    font-size: 1.8vw;
+    font-weight: 100;
+    cursor: pointer;
+}
+.med7 h6:after {
+    content: "";
+    position: absolute;
+    background-color: #FFA588;
+    left: 0;
+    height: 5px;
+    width: 0%;
+    border-radius: 2px;
+    bottom: 0px;
+    transition: 0.3s ease-in-out;
+}
+.med7 h6:hover:after {
+    width: 100%;
+    
+}
+
+#gd {
+    position: relative;
+}
+#gd:after {
+    content: "";
+    position: absolute;
+    background-color: #FFA588;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    border-radius: 2px;
+    bottom: 0px;
+}
+.med8 {
+    display: flex;
+    flex-direction: row;
+    gap: 7vw;
+    margin-top: 10vh;
+}
+.med8 img {
+    height: 17vw;
+}
+.med8 img:hover {
+    scale: 1.1;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* CONTAINER-4 CSS ENDS */
+
+/* CONTAINER-5 CSS STARTS */
+
+.container-5 {
+    margin-top: 18vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-5 h3{
+    color: #FFA588;
+    font-size: 2.2vw;
+    
+}
+
+/* CONTAINER-5 CSS ENDS */
+
+/* SLIDE-CONTANER CSS STARTS */
+
+.slide-container {
+    height: 30vw;
+    width: 100%;
+    background-color: #202124;
+    position: relative;
+}
+
+.slide {
+    display: flex;
+    flex-direction:row;
+    margin: 14vh 21vw;
+    display: none;
+    
+}
+
+.content-4 {
+    position: absolute;
+    margin-left: 28vw;
+    padding-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    transform: translateY(-23vw);
+}
+.content-4 p{
+    width: 34vw;
+    font-size: 1.8vw;
+    line-height: 2.5vw;
+    color: #fff;
+    font-style: italic;
+    animation: slidecontent 1.5s ease-in-out;
+}
+.med9 {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: center;
+    animation: slidecontent1 1.5s ease-in-out;
+}
+.med9 h6 {
+    font-size: 2.2vw;
+    color: #FFA588;
+}
+.med10 {
+    height: 4px;
+    width: 9vw;
+    background-color: #FFA588;
+    
+}
+
+@keyframes slidecontent {
+    0% {
+        opacity: 0;
+        transform: translate3d(-15%, 0%, 0px);
+    }
+
+}
+@keyframes slidecontent1 {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50%, 0px);
+    }
+
+}
+
+.slides-images {
+    height: 23vw;
+    animation: slideimages 1s ease-in-out;
+
+}
+
+@keyframes slideimages {
+    0% {
+        opacity: 0;
+        transform: translate3d(-20%,40%,0);
+        rotate: -10deg;
+        
+    }
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 11vw;
+}
+.arrow img {
+    height: 3vw;
+}
+
+.next {
+    right: 3.2vw;
+}
+
+.prev {
+    left: 3.2vw;
+}
+
+/* SLIDE-CONTANER CSS ENDS */
+
+/* FORM CONTAINER CSS STARTS */
+
+.form-container {
+    margin-top: 18vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.form-heading {
+    color: #FFA588;
+    font-size: 2.2vw;
+}
+.content-5 {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+/* FORM CSS */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+form input{
+    border: 0.19vw solid #FFA588;
+    border-radius: 0.3vw;
+    height: 4vw;
+    width: 33vw;
+    background-color: #202124;
+}
+
+form input::placeholder {
+    color: #FFA588;
+    padding-left: 3vw;
+    padding-top: 0.6vw;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+#message {
+    height: 10vw;
+    padding-bottom: 5.5vw;
+}
+#btn3 {
+    background-color: #FFA588;
+    color: #202124;
+    font-size: 2vw;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* FORM CSS ENDS */
+
+.line3 {
+    margin-top: 2vw;
+    height: 25vw;
+    width: 1.5px;
+    background-color: #FFA588;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    
+}
+.info h6 {
+    color: #FFA588;
+    font-size: 1.6vw;
+    font-weight: 200;
+    padding-bottom: 1.5vw;
+}
+.info p{
+    color: #fff;
+    font-size: 1.4vw;
+    padding-bottom: 2.5vw;
+}
+.med11 {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+.med11 img {
+    height: 2.2vw;
+    
+}
+
+/* FORM-CONTAINER CSS ENDS */
+
+/* MAINS CSS ENDS */
+
+/* FOOTER CSS STARTS */
+
+footer {
+    margin-top: 13vw;
+    background-color: #292B2E;
+    height: 9vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+footer p{
+    color: #fff;
+    font-size: 2.1vw;
+    margin-left: -15vw;
+}
+.med12 {
+    margin-right: -10vw;
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+.med12 img {
+    height: 2.0vw;
+}
+
+/* FOOTER CSS ENDS */
+
+/* RESPONSIVE CODE */
+
+@media(max-width:1100px) {
+    
+    .navbar {
+        padding-left: 40px;
+        font-size: 30px;
+    }
+    .container-1{
+        margin-left: 50px;
+    }
+    .line1{
+        margin-left: 10px;
+    }
+    .sidebar-items ul li img {
+        height: 20px;
+    }
+    .line2 {
+        margin-left: 10px;
+    }
+    .form-container{
+        margin-top: 8vh;
+
+    }
+    
+}
+
+@media(max-width:800px) {
+    .med6 {
+        height: 3px;
+    }
+    .med10 {
+        height: 3px;
+    }
+    #gd:after{
+        height: 4px;
+    }
+    .med7 h6:after{
+        height: 4px;
+    }
+    .nav-items ul li a:after{
+        height: 2px;
+        bottom: -10px;
+    }
+    #home a:after {
+        height: 2px;
+        bottom: -10px;
+    }
+    .nav-items ul li a {
+        height: 15px;
+    }
+}
+
+@media(max-width:700px){
+    .navbar {
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    .container-1{
+        margin-left: 30px;
+    }
+    .line1{
+        margin-left: 5px;
+    }
+    .sidebar-items ul li img {
+        height: 15px;
+    }
+    .line2 {
+        margin-left: 5px;
+    }
+    .form-container{
+        margin-top: 5vh;
+
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    #btn1 {
+        height: 5vw;
+        width: 18vw;
+        font-size: 1.9vw;
+    }
+
+    #btn2 {
+        height: 5vw;
+        width: 18vw;
+        font-size: 1.9vw;
+    }
+    .med6 {
+        margin-top: 2vh;
+    }
+
+}
+@media(max-width:530px) {
+
+    .navbar {
+        font-size: 15px;
+    }
+    .line1 {
+        height: 16vw;
+    }
+    .line2 {
+        height: 16vw;
+    }
+    .sidebar-items ul li img {
+        height: 15px;
+    }
+    .content-1 {
+        margin-top: 15vw;
+    }
+    .med4 img {
+        height: 37vw;
+    }
+    .content-2 {
+        margin-top: -2vh;
+    }
+    .box {
+        padding-top: 4vh;
+    }
+    #gd:after {
+        height: 2.5px;
+    }
+    .med7 h6:after{
+        height: 2.5px;
+    }
+    .content-3 {
+        margin-top: 8vh;
+    }
+
+}
+
+@media(max-width:485px){
+    
+    .content-3 {
+        margin-top: 3vh;
+    }
+    .med6 {
+        height: 2px;
+    }
+}
+@media(max-width:360px){
+    
+    .container-1{
+        flex-direction: column;
+    }
+    .sidebar{
+        display: none;
+    }
+    .nav-items ul li a{
+        font-size: 8px;
+        
+    }
+    .nav-items ul{
+        margin-top: -1.5vh;
+    }
+    .content-1 {
+        margin-top: 8vw;
+    }
+    .med1 {
+        font-size: 4vw;
+        padding-bottom: 2vw;
+    }
+    .med2 {
+        font-size: 8vw;
+        padding-bottom: 2vw;
+    }
+    .med3 {
+        font-size: 3.5vw;
+        padding-bottom: 2vw;
+    }
+    #button{
+        gap: 4vw;
+    }
+    #btn1 {
+        height: 7vw;
+        width: 70vw;
+        font-size: 3vw;
+    }
+
+    #btn2 {
+        height: 7vw;
+        width: 70vw;
+        font-size: 3vw;
+    }
+    .heroimg img{
+        height: 80vw;
+    }
+    .box {
+        padding-top: 2vh;
+    }
+    .container-2{
+        flex-direction: column;
+        margin-top: 5vh;
+        gap: 2vw;
+    }
+    .med4 img {
+        height: 55vw;
+    }
+    .container-3 {
+        margin-top: 8vh;
+    }
+    .container-4{
+        margin-top: 8vh;
+    }
+    .med7 {
+        margin-top: 0vh;
+    }
+    .med6 {
+        margin-top: 1vh;
+        height: 2px;
+    }
+    #gd:after {
+        height: 1.5px;
+    }
+    .med7 h6:after{
+        height: 1.5px;
+    }
+    .med8 {
+        display: flex;
+        flex-direction: row;
+        gap: 3vw;
+        margin-top: 5vh;
+    }
+    .container-5{
+        margin-top: 8vh;
+    }
+    .slide{
+        margin-top: 3vh;
+    }
+    .content-5{
+        margin-top: 3vh;
+    }
+    form input{
+        height: 5vw;
+        width: 40vw;
+    }
+    
+    form input::placeholder {
+        padding-top: -0.6vw;
+        font-size: 2vw;
+       
+    }
+    #message {
+        height: 12vw;
+        padding-bottom: 8vw;
+    }
+    .line3{
+        margin-top: 0.5vw;
+        height: 32vw;
+    }
+}
+@media(max-width:300px){
+    
+    .nav-items{
+        display: none;
+    }
+    .content-3{
+        flex-direction: column;
+    }
+    .box {
+        padding-top: 3vh;
+        height: 40vw;
+        width: 45vw;
+        gap: 3vw;
+        
+    
+    }
+    .box img {
+        height: 10.5vw;
+    }
+    .box h4{
+        color: #FFA588;
+        font-size: 3.6vw;
+    }
+    .box p{
+        
+        color: #fff;
+        font-size: 2.5vw;
+        width: 32vw;
+    }
+    .med8 {
+        display: flex;
+        flex-direction: column;
+        gap: 7vw;
+        
+    }
+    .med8 img {
+        height: 40vw;
+    }
+    .bar-menu{
+        display: block;
+        margin-right: 20px;
+    }
+    
+}
