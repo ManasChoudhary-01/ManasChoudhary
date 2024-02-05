@@ -56,7 +56,6 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
       return;
   }
 
-  alert("We will contact you soon!");
 })
 
 
