@@ -983,7 +983,7 @@ footer p{
         justify-content: center;
     }
     .box {
-        padding-top: 2.5vh;
+        padding-top: 2vh;
         height: 30vw;
         width: 35vw;
         gap: 3vw;
@@ -996,7 +996,7 @@ footer p{
     }
     .box p{
         font-size: 2.2vw;
-        width: 28vw;
+        width: 29vw;
     }
     .med8 {
         gap: 3vw;
