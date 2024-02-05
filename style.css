@@ -549,23 +549,45 @@ form {
     gap: 2vw;
 }
 form input{
+    color: white;
+    font-size: 1.5vw;
+    padding-left: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     border: 0.19vw solid #FFA588;
     border-radius: 0.3vw;
     height: 4vw;
     width: 33vw;
-    background-color: #202124;
+    background-color:transparent;
+    outline:none;
 }
 
-form input::placeholder {
+form input::placeholder, form textarea::placeholder {
     color: #FFA588;
     padding-left: 3vw;
     padding-top: 0.6vw;
     font-size: 1.5vw;
     font-weight: 100;
 }
-#message {
+
+form input:focus, form textarea:focus{
+    background-color:#fff;
+    color:black;
+    font-size: 1.5vw;
+    border: none;
+}
+
+form textarea{
+    color: white;
+    font-size: 1.5vw;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 0.19vw solid #FFA588;
+    border-radius: 0.3vw;
     height: 10vw;
-    padding-bottom: 5.5vw;
+    width: 33vw;
+    background-color: transparent;
+    outline: none;
 }
 #btn3 {
     background-color: #FFA588;
@@ -737,9 +759,6 @@ footer p{
 }
 @media(max-width:530px) {
 
-    .navbar {
-        font-size: 15px;
-    }
     .line1 {
         height: 16vw;
     }
@@ -781,6 +800,51 @@ footer p{
     .med6 {
         height: 2px;
     }
+    .content-2 h4 {
+        font-size: 3.5vw;
+    }
+    .content-2 p {
+        padding-top: 2vw;
+        font-size: 2vw;
+    }
+    .med4 img{
+        height: 45vw;
+    }
+    .med5 {
+        margin-top: -2vh;
+    }
+    .content-4 {
+        padding-top: 0;
+    }
+    .content-4 p{
+        font-size: 2vw;
+    }
+    .slides-images {
+        height: 25vw;
+    }
+    .info h6 {
+        font-size: 1.85vw;
+        padding-bottom: 1.4vw;
+    }
+    .info p{
+        font-size: 1.55vw;
+        padding-bottom: 2vw;
+    }
+    .med8 {
+        gap: 5vw;
+        margin-top: 8vh;
+    }
+    .med8 img {
+        height: 20vw;
+    }
+    .nav-items ul li a:after{
+        height: 2px;
+        bottom: -6px;
+    }
+    #home a:after {
+        height: 2px;
+        bottom: -6px;
+    }
 }
 @media(max-width:360px){
     
@@ -791,11 +855,10 @@ footer p{
         display: none;
     }
     .nav-items ul li a{
-        font-size: 8px;
-        
+        font-size: 10px;
     }
     .nav-items ul{
-        margin-top: -1.5vh;
+        margin-top: -1.4vw;
     }
     .content-1 {
         margin-top: 8vw;
@@ -829,9 +892,6 @@ footer p{
     .heroimg img{
         height: 80vw;
     }
-    .box {
-        padding-top: 2vh;
-    }
     .container-2{
         flex-direction: column;
         margin-top: 5vh;
@@ -859,12 +919,6 @@ footer p{
     .med7 h6:after{
         height: 1.5px;
     }
-    .med8 {
-        display: flex;
-        flex-direction: row;
-        gap: 3vw;
-        margin-top: 5vh;
-    }
     .container-5{
         margin-top: 8vh;
     }
@@ -877,20 +931,85 @@ footer p{
     form input{
         height: 5vw;
         width: 40vw;
+        font-size: 8px;
+        padding-left: 3px;
     }
     
-    form input::placeholder {
+    form input::placeholder, form textarea::placeholder {
         padding-top: -0.6vw;
         font-size: 2vw;
-       
     }
-    #message {
+    
+    form textarea {
+        width: 40vw;
         height: 12vw;
-        padding-bottom: 8vw;
+        padding-top: 3px;
+        padding-left: 3px;
+        font-size: 8px;
     }
+    
     .line3{
         margin-top: 0.5vw;
         height: 32vw;
+    }
+    .content-2 h4 {
+        font-size: 4vw;
+    }
+    .content-2 p {
+        padding-top: 2vw;
+        font-size: 2.5vw;
+    }
+    .container-3 h3{
+        font-size: 4vw;
+    }
+    .container-4 h3{
+        font-size: 4vw;
+    }
+    .med7 h6 {
+        margin-top: 2vh;
+        font-size: 3vw;
+        height: 4.6vw;
+    }
+    .container-5 h3{
+        font-size: 4vw;
+    }
+    .form-heading{
+        font-size: 4vw;
+    }
+    .content-3 {
+        margin-top: 4vh;
+        flex-wrap: wrap;
+        gap: 4vw;
+        justify-content: center;
+    }
+    .box {
+        padding-top: 2.5vh;
+        height: 30vw;
+        width: 35vw;
+        gap: 3vw;
+    }
+    .box img {
+        height: 7.5vw;
+    }
+    .box h4{
+        font-size: 2.6vw;
+    }
+    .box p{
+        font-size: 2.2vw;
+        width: 28vw;
+    }
+    .med8 {
+        gap: 3vw;
+        margin-top: 5vh;
+    }
+    .med8 img {
+        height: 23vw;
+    }
+    .nav-items ul li a:after{
+         bottom: -4.5px;
+    }
+    #home a:after {
+        bottom: -4.5px;
     }
 }
 @media(max-width:300px){
